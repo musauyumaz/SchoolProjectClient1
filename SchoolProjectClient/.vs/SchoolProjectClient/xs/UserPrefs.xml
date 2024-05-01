@@ -1,62 +1,55 @@
-﻿<Properties StartupConfiguration="{D3B2F5CD-69D2-488F-99DC-BBB5E795B5CA}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.SchoolProjectClient.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Pages/Test.razor">
+﻿<Properties StartupConfiguration="{7F81C5B9-784A-4AA8-A53D-3469E38AB63B}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ClientProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClientProject/wwwroot/index.html">
     <Files>
-      <File FileName="Client/Pages/Test.razor" Line="31" Column="19" />
-      <File FileName="Client/Program.cs" />
-      <File FileName="Client/Services/HttpClientService.cs" Line="34" Column="1" />
+      <File FileName="Client/Pages/Test.razor" />
+      <File FileName="Client/Program.cs" Line="36" Column="1" />
+      <File FileName="Client/Services/HttpClientService.cs" />
       <File FileName="Client/Shared/MainLayout.razor" />
       <File FileName="Client/_Imports.razor" />
       <File FileName="Client/Shared/NavMenu.razor" />
-      <File FileName="Client/App.razor" />
       <File FileName="Client/wwwroot/index.html" />
-      <File FileName="Client/Pages/Users/AddUserPopup.razor" Line="23" Column="21" />
-      <File FileName="Client/Properties/launchSettings.json" Line="26" Column="32" />
-      <File FileName="Client/Model/User/AddUser.cs" Line="14" Column="1" />
-      <File FileName="Client/Services/Users/UserService.cs" Line="24" Column="1" />
-      <File FileName="Client/Services/Users/IUserService.cs" Line="8" Column="42" />
-      <File FileName="Client/Model/User/User.cs" Line="19" Column="2" />
-      <File FileName="Client/Model/User/GetAllUser.cs" Line="7" Column="3" />
-      <File FileName="Client/Model/Common/BaseResponse.cs" Line="8" Column="46" />
-      <File FileName="Client/Services/RequestParameter.cs" Line="9" Column="44" />
+      <File FileName="Client/Pages/Users/AddUserPopup.razor" />
+      <File FileName="Client/Properties/launchSettings.json" />
+      <File FileName="Client/Model/User/AddUser.cs" />
+      <File FileName="Client/Services/Users/UserService.cs" />
+      <File FileName="Client/Services/Users/IUserService.cs" />
+      <File FileName="Client/Model/User/User.cs" />
+      <File FileName="Client/Model/User/GetAllUser.cs" />
+      <File FileName="Client/Model/Common/BaseResponse.cs" />
+      <File FileName="Client/Services/RequestParameter.cs" />
+      <File FileName="Client/Model/Utils/AuthStateProvider.cs" Line="15" Column="10" />
+      <File FileName="ClientProject/Program.cs" Line="9" Column="39" />
+      <File FileName="ClientProject/Shared/MainLayout.razor" Line="31" Column="8" />
+      <File FileName="ClientProject/Properties/launchSettings.json" Line="15" Column="46" />
+      <File FileName="ClientProject/Pages/LogIn/Login.razor" Line="20" Column="22" />
+      <File FileName="ClientProject/Shared/NavMenu.razor" Line="38" Column="1" />
+      <File FileName="ClientProject/App.razor" Line="15" Column="29" />
+      <File FileName="ClientProject/wwwroot/index.html" Line="42" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SchoolProjectClient" expanded="True">
-            <Node name="SchoolProjectClient.Client">
-              <Node name="Model" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="Users" expanded="True" />
-                <Node name="Test.razor" selected="True" />
+          <Node name="SchoolProjectClient">
+            <Node name="ClientProject">
+              <Node name="wwwroot">
+                <Node name="css" expanded="True" />
+                <Node name="index.html" selected="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Users" expanded="True" />
-              </Node>
-              <Node name="Shared" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>urlBuilder.ToString()</Value>
-          <Value>(await _userService.GetAllUserListAsync(0, 8)).Data</Value>
-          <Value>await _userService.GetAllUserListAsync(0, 8)</Value>
-          <Value>await _userService.GetAllUserListAsync(0, 8)</Value>
-          <Value>await _userService.GetAllUserListAsync(0, 8)</Value>
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SchoolProjectClient.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.SchoolProjectClient.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/zaferavci/Documents/GitHub/SchoolProjectClient1/SchoolProjectClient/Client/Pages/Users/AddUserPopup.razor" relfile="Client/Pages/Users/AddUserPopup.razor" line="37" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.SchoolProjectClient.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

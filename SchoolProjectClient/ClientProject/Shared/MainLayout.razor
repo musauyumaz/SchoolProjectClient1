@@ -1,17 +1,54 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+@inject IUserService _userService
+@inject NavigationManager _navigationManager;
+
+
+<RadzenDialog />
+<RadzenContextMenu />
+<RadzenNotification />
+<RadzenTooltip />
+
+
+<RadzenLayout>
+    @* <RadzenHeader></RadzenHeader> *@
+    <RadzenSidebar>
+        <div class="rz-p-4">
+            <NavMenu />
         </div>
-
-        <article class="content px-4">
+    </RadzenSidebar>
+    <RadzenBody>
+        <div class="rz-p-4">
             @Body
-        </article>
-    </main>
-</div>
+        </div>
+    </RadzenBody>
+    @*  <RadzenFooter>
+        </RadzenFooter> *@
+</RadzenLayout>
+
+
+@code {
+
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthenticationState { get; set; }
+
+    [Inject]
+    Blazored.LocalStorage.ILocalStorageService LocalStorageService { get; set; }
+
+    private string userMail = "about";
+
+    protected async override Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationState;
+        if (authState.User.Identity.IsAuthenticated)
+        {
+            userMail = await LocalStorageService.GetItemAsStringAsync("UserId");
+            userMail = (await _userService.GetUserByIdAsync(userMail)).Data.Mail;
+        }
+        else
+        {
+            _navigationManager.NavigateTo("/login");
+        }
+    }
+}
